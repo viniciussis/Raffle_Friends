@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A home page should be rendered correctly 1`] = `
+<div>
+  <main
+    class="home"
+  >
+    <h1
+      class="home__title"
+    >
+      Vamos começar!
+    </h1>
+    <form>
+      <input
+        placeholder="Insira o nome dos participantes"
+        type="text"
+        value=""
+      />
+      <button
+        disabled=""
+        type="submit"
+      >
+        Adicionar
+      </button>
+      
+    </form>
+    <ul
+      class="participantsList"
+    />
+    <section
+      class="Footer"
+    >
+      <button
+        class="Footer__button"
+        disabled=""
+      >
+        Iniciar Brincadeira!
+      </button>
+      <img
+        alt="sacolas"
+        src="/public/images/sacolas.png"
+      />
+    </section>
+  </main>
+</div>
+`;
