@@ -1,0 +1,40 @@
+@use '/src/assets/styles/variables.scss';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__button {
+    width: 350px;
+    height: 80px;
+    font-size: 20px;
+    box-shadow: 2px 2px 0px 1px black;
+    border-radius: 45px;
+    background-color: variables.$orange;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &__button:hover {
+    background-color: variables.$baby-blue;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+
+    &__button {
+      width: 220px;
+      margin: 32px 0;
+    }
+
+    img {
+      margin-top: 32px;
+    }
+  }
+}

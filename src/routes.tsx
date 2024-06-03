@@ -5,7 +5,7 @@ import Layout from './components/Layout'
 import Sorteio from './pages/Sorteio'
 import Home from './pages/Home'
 
-function App() {
+function AppRoutes() {
   return (
     <BrowserRouter>
       <RecoilRoot>
@@ -20,4 +20,4 @@ function App() {
   )
 }
 
-export default App
+export default AppRoutes

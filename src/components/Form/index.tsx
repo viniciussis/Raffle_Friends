@@ -19,17 +19,19 @@ const Form = () => {
 
   return (
     <form onSubmit={createParticipant}>
-      <input
-        value={name}
-        placeholder='Insira o nome dos participantes'
-        onChange={(e) => setName(e.target.value)}
-        type="text"
-        ref={inputRef}
-      />
-      <button disabled={!name ? true : false} type="submit">
-        Adicionar
-      </button>
-      {errorMessage && <p role="alert">{errorMessage}</p>}
+      <div className="formGroup">
+        <input
+          value={name}
+          placeholder="Insira o nome dos participantes"
+          onChange={(e) => setName(e.target.value)}
+          type="text"
+          ref={inputRef}
+        />
+        <button disabled={!name ? true : false} type="submit">
+          Adicionar
+        </button>
+      </div>
+      {errorMessage && <p className='alert error' role="alert">{errorMessage}</p>}
     </form>
   )
 }

@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom'
 import reportWebVitals from './reportWebVitals'
 
 import './assets/styles/typography.scss'
-import './assets/styles/normalize.scss' 
+import './assets/styles/normalize.scss'
 import './assets/styles/reset.scss'
 import './index.scss'
-import App from './App'
+import AppRoutes from './routes'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppRoutes />
   </React.StrictMode>,
   document.getElementById('root'),
 )

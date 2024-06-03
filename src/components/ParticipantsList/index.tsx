@@ -1,14 +1,11 @@
 import { useParticipants } from '../../hooks/useParticipants'
-import './ParticipantsList.scss'
 
 const ParticipantsList = () => {
   const participants = useParticipants()
   return (
-    <ul className="participantsList">
+    <ul>
       {participants.map((participant) => (
-        <li className="participantsList__itens" key={participant}>
-          {participant}
-        </li>
+        <li key={participant}>{participant}</li>
       ))}
     </ul>
   )

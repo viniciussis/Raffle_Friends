@@ -7,10 +7,10 @@ const Footer = () => {
   const participants = useParticipants()
   const navigate = useNavigate()
   return (
-    <section className="Footer">
+    <section className="footer">
       <button
         disabled={participants.length < 3 ? true : false}
-        className="Footer__button"
+        className="footer__button"
         onClick={() => navigate('/sorteio')}
       >
         Iniciar Brincadeira!
