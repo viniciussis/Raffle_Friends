@@ -7,7 +7,16 @@ const Home = () => {
   return (
     <Card>
       <main>
-        <h1>Vamos começar!</h1>
+        <h1
+          style={{
+            color: 'orange',
+            marginBottom: '2rem',
+            textAlign: 'center',
+            fontSize: '2rem',
+          }}
+        >
+          Vamos começar!
+        </h1>
         <Form />
         <ParticipantsList />
         <Footer />

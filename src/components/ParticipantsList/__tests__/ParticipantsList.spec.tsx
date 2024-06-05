@@ -20,8 +20,8 @@ describe('an empty list of participants', () => {
         <ParticipantsList />
       </RecoilRoot>,
     )
-    const participantsList = screen.queryAllByRole('listitem')
-    expect(participantsList).toHaveLength(0)
+    const participants = screen.queryAllByRole('listitem')
+    expect(participants).toHaveLength(0)
   })
 })
 
@@ -35,7 +35,7 @@ describe('a full list of participants', () => {
         <ParticipantsList />
       </RecoilRoot>,
     )
-    const participantsList = screen.getAllByRole('listitem')
-    expect(participantsList).toHaveLength(3)
+    const participants = screen.getAllByRole('listitem')
+    expect(participants).toHaveLength(3)
   })
 })

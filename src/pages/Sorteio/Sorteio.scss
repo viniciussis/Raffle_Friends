@@ -1,16 +1,24 @@
-@use './assets/styles/variables';
+@use '/src/assets/styles/variables.scss';
 
 .sorteio {
   color: variables.$orange;
   font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 
-  &__result {
-    color: variables.$orange;
-    font-size: 25px;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
-  &__footer {
-    margin: 64px 0;
+  &__result {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
   }
 
   &__button {
@@ -22,7 +30,6 @@
     background-color: variables.$orange;
     color: #FFF;
     cursor: pointer;
-    margin: 16px 0;
 
     &:disabled {
       opacity: 0.6;
@@ -37,7 +44,7 @@
   select {
     border-radius: 45px;
     height: 82px;
-    width: 70%;
+    width: 100%;
     box-sizing: border-box;
     padding: 0 32px;
     font-size: 20px;
@@ -51,8 +58,6 @@
 
   p {
     font-size: 20px;
-    font-weight: 200;
-    margin: 32px 0;
   }
 
   @media screen and (max-width: 800px) {
@@ -62,7 +67,6 @@
 
     &__button {
       width: 220px;
-      margin: 32px 0;
     }
   }
 }

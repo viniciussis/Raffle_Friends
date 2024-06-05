@@ -4,11 +4,9 @@ import { RecoilRoot } from 'recoil'
 import { useParticipants } from '../../../hooks/useParticipants'
 import Footer from '..'
 
-jest.mock('../../../hooks/useParticipants', () => {
-  return {
-    useParticipants: jest.fn(),
-  }
-})
+jest.mock('../../../hooks/useParticipants', () => ({
+  useParticipants: jest.fn(),
+}))
 
 const mockNavigate = jest.fn()
 

@@ -2,45 +2,51 @@
 
 exports[`A home page should be rendered correctly 1`] = `
 <div>
-  <main
-    class="home"
+  <div
+    class="card"
   >
-    <h1
-      class="home__title"
-    >
-      Vamos começar!
-    </h1>
-    <form>
-      <input
-        placeholder="Insira o nome dos participantes"
-        type="text"
-        value=""
-      />
-      <button
-        disabled=""
-        type="submit"
+    <main>
+      <h1
+        style="color: orange; margin-bottom: 2rem; text-align: center; font-size: 2rem;"
       >
-        Adicionar
-      </button>
-      
-    </form>
-    <ul
-      class="participantsList"
-    />
-    <section
-      class="Footer"
-    >
-      <button
-        class="Footer__button"
-        disabled=""
-      >
-        Iniciar Brincadeira!
-      </button>
-      <img
-        alt="sacolas"
-        src="/public/images/sacolas.png"
+        Vamos começar!
+      </h1>
+      <form>
+        <div
+          class="formGroup"
+        >
+          <input
+            placeholder="Insira o nome dos participantes"
+            type="text"
+            value=""
+          />
+          <button
+            disabled=""
+            type="submit"
+          >
+            Adicionar
+          </button>
+        </div>
+        
+      </form>
+      <ul
+        style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;"
       />
-    </section>
-  </main>
+      <section
+        class="footer"
+      >
+        <button
+          class="footer__button"
+          disabled=""
+        >
+          Iniciar Brincadeira!
+        </button>
+        <img
+          alt="sacolas"
+          src="/images/sacolas.png"
+        />
+      </section>
+    </main>
+  </div>
 </div>
 `;

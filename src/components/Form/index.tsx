@@ -21,6 +21,7 @@ const Form = () => {
     <form onSubmit={createParticipant}>
       <div className="formGroup">
         <input
+          name='Participante'
           value={name}
           placeholder="Insira o nome dos participantes"
           onChange={(e) => setName(e.target.value)}
